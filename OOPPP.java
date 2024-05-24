@@ -38,7 +38,7 @@ class Department extends University {
         this.deptId = deptId;
     }
 
-    // Getters for department
+    
     public String getDeptName() {
         return deptName;
     }
@@ -191,7 +191,7 @@ class Student extends Department {
         int rollNo = scanner.nextInt();
         Student student = findStudentByRollNo(rollNo);
         if (student != null) {
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); 
             System.out.print("Enter new student name: ");
             student.setStudentName(scanner.nextLine());
             System.out.print("Enter new semester: ");
@@ -253,7 +253,7 @@ class Student extends Department {
             System.out.println("\tpress 4 to exit");
 
             choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); 
             switch (choice) {
                 case 1:
                     updateUniversityDetails();
